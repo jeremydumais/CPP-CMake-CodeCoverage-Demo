@@ -29,3 +29,9 @@ const std::string& Employee::getLastName() const
 {
     return lastName;
 }
+
+std::ostream& operator<<(std::ostream &os, const Employee &emp)
+{
+    os << emp.firstName << " " << emp.lastName;
+    return os;
+}
